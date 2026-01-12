@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #4f85cb;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box {
+    width: 650px;
+    background: rgb(217, 210, 210);
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-row {
+    display: flex;
+    gap: 10px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+#addBtn {
+    padding: 10px 15px;
+    border: none;
+    background: #4caf50;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background: #43a047;
+}
+
+#taskContainer {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.numCircle {
+    width: 32px;
+    height: 32px;
+    background: #867474;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.taskText {
+    flex: 1;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #777;
+}
+
+.deleteBtn {
+    background: #ff6b6b;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    background: #ff5252;
+}
