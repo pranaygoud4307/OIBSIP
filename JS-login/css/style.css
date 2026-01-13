@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background: #61686d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 400px;
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+.box button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.box button:hover {
+    background: #3f9744;
+}
+
+a {
+    color: #4f85cb;
+    text-decoration: none;
+}
+
+.profile-circle {
+    box-shadow: 0 5px 15px rgba(79, 133, 203, 0.5);
+}
+
+.container {
+    animation: floatUp 1.2s ease-out;
+}
+
+@keyframes floatUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, #7da9f0, #4f85cb);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+}
+
+
